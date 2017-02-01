@@ -33,6 +33,7 @@ ah ah ah ah ah ok um er ok um ok
 ```shell
 $ javac Um.java
 $ java Um examples/helloworld.um
+Hello World!
 ```
 
 ## Todo

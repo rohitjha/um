@@ -7,12 +7,19 @@ Version: 0.1
 um is derived from brainfuck and has the following equivalence with brainfuck operators:
 
 \> um
+
 < uh
+
 \+ er
+
 \- ah
+
 . ok
+
 , so
+
 [ well
+
 ] like
 
 

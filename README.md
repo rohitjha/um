@@ -6,16 +6,16 @@ Version: 0.1
 ## About um
 um is derived from brainfuck and has the following equivalence with brainfuck operators:
 
-| bf |  um  |
-|:--:|:----:|
-| >  |  um  |
-| <  |  uh  |
-| +  |  er  |
-| -  |  ah  |
-| .  |  ok  |
-| ,  |  so  |
-| [  | well |
-| ]  | like |
+| Brainfuck operator |  um operator | Meaning |
+|:------------------:|:------------:|:--------|
+| >  |  um  | increment the data pointer (to point to the next cell to the right) |
+| <  |  uh  | decrement the data pointer (to point to the next cell to the left) |
+| +  |  er  | increment (increase by one) the byte at the data pointer |
+| -  |  ah  | decrement (decrease by one) the byte at the data pointer |
+| .  |  ok  | output the byte at the data pointer |
+| ,  |  so  | accept one byte of input, storing its value in the byte at the data pointer |
+| [  | well | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command |
+| ]  | like | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command |
 
 
 ## um ... Hello World!

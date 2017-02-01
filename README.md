@@ -6,10 +6,10 @@ Version: 0.1
 ## About um
 um is derived from brainfuck and has the following equivalence with brainfuck operators:
 
-> um
+\> um
 < uh
-+ er
-- ah
+\+ er
+\- ah
 . ok
 , so
 [ well

@@ -4,7 +4,7 @@ An esoteric programming language made up of common English fillers
 Version: 0.1
 
 ## About um
-um is a brainfuck-derived language with the following supported operators:
+um is a brainfuck-derived language with a tape of size 64KB and the following supported operators:
 
 |  um operator | Meaning |
 |:------------:|:--------|

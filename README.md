@@ -1,7 +1,7 @@
 # um
 An esoteric programming language made up of common English fillers
 
-Version: 0.1
+Version: 0.2
 
 ## About um
 um is a brainfuck-derived language with a tape of size 64KB and the following supported operators:
@@ -14,8 +14,8 @@ um is a brainfuck-derived language with a tape of size 64KB and the following su
 |  ah  | decrement (decrease by one) the byte at the data pointer |
 |  ok  | output the byte at the data pointer |
 |  so  | accept one byte of input, storing its value in the byte at the data pointer |
-| well | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching ] command |
-| like | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching [ command |
+| well | if the byte at the data pointer is zero, then instead of moving the instruction pointer forward to the next command, jump it forward to the command after the matching 'like' command |
+| like | if the byte at the data pointer is nonzero, then instead of moving the instruction pointer forward to the next command, jump it back to the command after the matching 'well' command |
 
 
 ## um ... Hello World!
@@ -30,12 +30,17 @@ ah ah ah ah ah ok um er ok um ok
 ```
 
 ## Running um
+The Um Java class has the API for evaluating an um program from a file.
+
+The Filler class uses this API to run the um program in helloworld.um:
+
 ```shell
-$ javac Um.java
-$ java Um examples/helloworld.um
+$ javac Filler.java
+$ java Filler examples/helloworld.um
 Hello World!
 ```
 
 ## Todo
-* Better exception handling
-* Better documentation
+* Um ... Handle incorrect programs
+* Er ... Better exception handling
+* Uh ... Better documentation

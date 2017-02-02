@@ -82,7 +82,7 @@ public class Um {
   }
 
 
-  public String[] readProgram(String fileName) {
+  private static String[] readProgram(String fileName) {
     StringBuffer fileContent = readFile(fileName);
     String trimmedContent = trim(fileContent);
     String[] tokens = getTokens(trimmedContent);
@@ -90,7 +90,8 @@ public class Um {
   }
 
   
-  public void eval(String[] tokens) {
+  public void eval(String fileName) {
+    String[] tokens = readProgram(fileName);
     int numTokens = tokens.length;
     int loop = 0;
 
@@ -158,12 +159,5 @@ public class Um {
     catch (IOException e) {
       e.printStackTrace();
     }
-  }
-
-  
-  public static void main(String args[]) {
-    Um umm = new Um();
-    String[] tokens = umm.readProgram(args[0]);
-    umm.eval(tokens);
   }
 }

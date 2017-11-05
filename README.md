@@ -35,8 +35,9 @@ The Um Java class has the API for evaluating an um program from a file.
 The Filler class uses this API to run the um program in helloworld.um:
 
 ```shell
+$ cd src
 $ javac Filler.java
-$ java Filler examples/helloworld.um
+$ java Filler ../examples/helloworld.um
 Hello World!
 ```
 
@@ -44,3 +45,4 @@ Hello World!
 * Um ... Handle incorrect programs
 * Er ... Better exception handling
 * Uh ... Better documentation
+
